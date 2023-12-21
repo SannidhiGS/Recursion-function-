@@ -1,0 +1,12 @@
+<?php
+function calculateSum($num) {
+  if ($num == 1) {
+    return 1;
+  } else {
+    return $num + calculateSum($num - 1);
+  }
+}
+
+$result = calculateSum(5);
+echo "The sum of numbers from 1 to 5 is: " . $result;
+?>
